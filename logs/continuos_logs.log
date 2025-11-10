@@ -13,3 +13,41 @@
 [2025-11-09 21:07:22,007:INFO:common:created directory at :artifacts/data_ingestion]
 [2025-11-09 21:07:25,891:INFO:data_ingestion:File is downloaded]
 [2025-11-09 21:07:26,047:INFO:main:stage Data Ingestion stage completed]
+[2025-11-10 11:23:08,783:INFO:common:yaml file : config\config.yaml loaded successfully]
+[2025-11-10 11:23:08,814:INFO:common:yaml file : params.yaml loaded successfully]
+[2025-11-10 11:23:08,818:INFO:common:created directory at :artifacts]
+[2025-11-10 11:23:08,821:INFO:common:created directory at :artifacts/data_transformation]
+[2025-11-10 11:41:38,012:INFO:main:stage Data Ingestion stage initiated]
+[2025-11-10 11:41:38,014:INFO:common:yaml file : config\config.yaml loaded successfully]
+[2025-11-10 11:41:38,015:INFO:common:yaml file : params.yaml loaded successfully]
+[2025-11-10 11:41:38,015:INFO:common:created directory at :artifacts]
+[2025-11-10 11:41:38,015:INFO:common:created directory at :artifacts/data_ingestion]
+[2025-11-10 11:41:38,015:INFO:data_ingestion:File already exists]
+[2025-11-10 11:41:38,156:INFO:main:stage Data Ingestion stage completed]
+[2025-11-10 11:41:38,156:INFO:main:stage Data transformation stage initiated]
+[2025-11-10 11:41:38,159:INFO:common:yaml file : config\config.yaml loaded successfully]
+[2025-11-10 11:41:38,159:INFO:common:yaml file : params.yaml loaded successfully]
+[2025-11-10 11:41:38,160:INFO:common:created directory at :artifacts]
+[2025-11-10 11:41:38,160:INFO:common:created directory at :artifacts/data_ingestion]
+[2025-11-10 11:41:38,160:ERROR:main:'DataIngestionConfig' object has no attribute 'tokenizer_name']
+Traceback (most recent call last):
+  File "C:\Users\Farouk\Desktop\TextSummarizer\main.py", line 24, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "C:\Users\Farouk\Desktop\TextSummarizer\src\TextSummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 12, in initiate_data_transformation
+    data_transformation= DataTransformation(config=data_transformation_config)
+  File "C:\Users\Farouk\Desktop\TextSummarizer\src\TextSummarizer\components\data_transformation.py", line 10, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+AttributeError: 'DataIngestionConfig' object has no attribute 'tokenizer_name'
+[2025-11-10 11:44:22,944:INFO:main:stage Data Ingestion stage initiated]
+[2025-11-10 11:44:22,946:INFO:common:yaml file : config\config.yaml loaded successfully]
+[2025-11-10 11:44:22,947:INFO:common:yaml file : params.yaml loaded successfully]
+[2025-11-10 11:44:22,947:INFO:common:created directory at :artifacts]
+[2025-11-10 11:44:22,948:INFO:common:created directory at :artifacts/data_ingestion]
+[2025-11-10 11:44:22,948:INFO:data_ingestion:File already exists]
+[2025-11-10 11:44:23,064:INFO:main:stage Data Ingestion stage completed]
+[2025-11-10 11:44:23,064:INFO:main:stage Data transformation stage initiated]
+[2025-11-10 11:44:23,067:INFO:common:yaml file : config\config.yaml loaded successfully]
+[2025-11-10 11:44:23,067:INFO:common:yaml file : params.yaml loaded successfully]
+[2025-11-10 11:44:23,068:INFO:common:created directory at :artifacts]
+[2025-11-10 11:44:23,069:INFO:common:created directory at :artifacts/data_transformation]
+[2025-11-10 11:44:32,006:INFO:main:stage Data transformation stage completed]
