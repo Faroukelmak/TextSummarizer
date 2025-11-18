@@ -16,7 +16,7 @@ Objectif : construire un **pipeline MLOps complet** + une **API FastAPI** pour s
 - 🐳 **Support Docker**  
 - 🧩 Architecture propre, modulaire et scalable  
 
-Ce projet met en avant mes compétences en **NLP, Deep Learning, MLOps, API Design** et **architecture logicielle**.
+Ce projet met en avant mes compétences en **NLP, finetuning, MLOps, API Design** et **architecture logicielle**.
 
 ---
 
@@ -29,6 +29,9 @@ B --> C[Model Training]
 C --> D[Model Evaluation]
 D --> E[Saved Model]
 E --> F[FastAPI Prediction]
+```
+
+
 
 ## ▶️ Comment exécuter le projet
 
@@ -36,18 +39,22 @@ E --> F[FastAPI Prediction]
 ```bash
 git clone https://github.com/faroukelmak/textsummarizer.git
 cd textsummarizer
+```
 
 ### 2. Installer les dépendances
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3. Lancer le training
 ```bash
 python main.py
+```
 
 ### 4. Lancer l’API
 ```bash
 uvicorn app:app --reload
+```
 
 API accessible ici :
 ➡️ http://localhost:8000/docs
